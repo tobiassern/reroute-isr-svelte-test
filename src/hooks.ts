@@ -1,16 +1,23 @@
 import type { Reroute } from '@sveltejs/kit';
 
-
-export const reroute: Reroute = ({ url }) => {
-    console.log("## REROUTE ##");
-    console.log(url.pathname)
-    if (url.pathname === '/isr' || url.pathname === '/isr/__data.json' ) {
-        console.log("HERE")
-        if(url.pathname === '/isr/__data.json') {
-            return '/isr-rerouted/__data.json'
-        }
-        return '/isr-rerouted'
-    }
+const translated: { [n: string]: string } = {
+    '/isr': '/isr-rerouted',
 };
 
+export const reroute: Reroute = ({ url }) => {
+    console.log(`REROUTE`, url.toString());
+
+    let suffix = '';
+    let pathname = url.pathname;
+    const segments = pathname.split('/');
+    const lastSegment = segments.at(-1);
+    if (lastSegment && /\.\w+$/.test(lastSegment)) {
+        suffix = '/' + lastSegment;
+        pathname = segments.slice(0, -1).join('/');
+    }
+
+    if (pathname in translated) {
+        return translated[pathname] + suffix;
+    }
+}
 
