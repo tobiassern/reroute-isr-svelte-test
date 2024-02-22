@@ -1,10 +1,10 @@
-<p>
+<p data-sveltekit-preload-data="false">
 	ISR with reroute (rerouted path): <a href="/isr">/isr</a>
 </p>
-<p>ISR with reroute (original path): <a href="/isr-with-reroute">/isr-with-reroute</a></p>
+<p data-sveltekit-preload-data="false">ISR with reroute (original path): <a href="/reroute-and-isr">/reroute-and-isr</a></p>
 
 <br />
-<p>Reroute without ISR (rerouted path): <a href="/isr/no-reroute">/isr/no-reroute</a></p>
+<p>Reroute without ISR (rerouted path): <a href="/reroute/no-isr">/reroute/no-reroute</a></p>
 <p>
 	Reroute without ISR (original path): <a href="/reroute-without-isr">/reroute-without-isr</a>
 </p>
