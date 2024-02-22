@@ -1,10 +1,5 @@
 <p>
-	ISR with reroute (rerouted path): <a
-		href="/isr"
-		data-sveltekit-preload-code="false"
-		data-sveltekit-preload-data="false"
-		data-sveltekit-reload>/isr</a
-	>
+	ISR with reroute (rerouted path): <a href="/isr">/isr</a>
 </p>
 <p>ISR with reroute (original path): <a href="/isr-with-reroute">/isr-with-reroute</a></p>
 
