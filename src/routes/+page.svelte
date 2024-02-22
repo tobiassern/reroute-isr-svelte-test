@@ -14,7 +14,7 @@
 	Reroute without SSR (original path): <a href="/reroute-without-ssr">/reroute-without-ssr</a>
 </p>
 <br />
-<p>ISR wtihout reroute: <a href="/isr-with-reroute">/isr-without-reroute</a></p>
+<p>ISR without reroute: <a href="/isr-without-reroute">/isr-without-reroute</a></p>
 <form method="POST" action="?/prerender-revalidate">
 	<button>Revalidate ISR</button>
 </form>

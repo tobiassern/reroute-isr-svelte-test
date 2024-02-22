@@ -12,14 +12,14 @@ export const actions: Actions = {
             }
         });
 
-        await fetch('/isr-rerouted', {
+        await fetch('/isr-without-reroute', {
             method: 'HEAD',
             headers: {
                 'x-prerender-revalidate': BYPASS_TOKEN
             }
         });
 
-        await fetch('/isr-no-reroute', {
+        await fetch('/reroute-and-isr', {
             method: 'HEAD',
             headers: {
                 'x-prerender-revalidate': BYPASS_TOKEN
