@@ -1,2 +1,3 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<p>Test reroute with ISR: <a href="/isr">/isr</a></p>
+<p>Page rerouted to: <a href="/isr-rerouted">/isr-rerouted</a></p>
+<p>Test ISR: <a href="/isr-no-reroute">/isr-no-reroute</a></p>
