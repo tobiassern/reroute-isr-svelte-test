@@ -2,8 +2,8 @@ import type { Reroute } from '@sveltejs/kit';
 
 export const reroute: Reroute = ({ url }) => {
     console.log("## REROUTE HOOK ##");
-    console.log(url.href);
-    console.log(url.pathname);
+    console.log("REROUTE HOOK href: ", url.href);
+    console.log("REROUTE HOOK pathname: ", url.pathname);
 
 
 
