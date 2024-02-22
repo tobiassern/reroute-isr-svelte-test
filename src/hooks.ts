@@ -2,7 +2,9 @@ import type { Reroute } from '@sveltejs/kit';
 
 const reroutes: Record<string, string> = {
     '/isr': '/reroute-and-isr',
+    '/isr/__data.json?x-sveltekit-invalidated=01': '/reroute-and-isr/__data.json?x-sveltekit-invalidated=01',
     '/reroute/no-isr': '/reroute-without-isr',
+    '/reroute/no-isr/__data.json?x-sveltekit-invalidated=01': '/reroute-without-isr/__data.json?x-sveltekit-invalidated=01',
     '/no-ssr': '/reroute-without-ssr'
 }
 

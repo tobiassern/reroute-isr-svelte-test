@@ -1,4 +1,4 @@
-<p data-sveltekit-preload-data="false">
+<p>
 	ISR with reroute (rerouted path): <a href="/isr">/isr</a>
 </p>
 <p data-sveltekit-preload-data="false">ISR with reroute (original path): <a href="/reroute-and-isr">/reroute-and-isr</a></p>
