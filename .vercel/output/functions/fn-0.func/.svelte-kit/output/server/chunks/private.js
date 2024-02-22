@@ -1,0 +1,4 @@
+const BYPASS_TOKEN = "KNU2wVcCT7dEs6DzQF5RLjyMvfZmX43S";
+export {
+  BYPASS_TOKEN as B
+};

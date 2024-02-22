@@ -1,0 +1,10 @@
+{
+	"expiration": 60,
+	"bypassToken": "KNU2wVcCT7dEs6DzQF5RLjyMvfZmX43S",
+	"allowQuery": [
+		"__pathname",
+		"search"
+	],
+	"group": 1,
+	"passQuery": true
+}

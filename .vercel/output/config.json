@@ -1,0 +1,47 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "/_app/immutable/.+",
+			"headers": {
+				"cache-control": "public, immutable, max-age=31536000"
+			}
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "^/?(?:/__data.json)?$",
+			"dest": "/fn-0"
+		},
+		{
+			"src": "^/isr-with-reroute/?$",
+			"dest": "/isr-with-reroute?__pathname=/isr-with-reroute"
+		},
+		{
+			"src": "^/isr-with-reroute/?/__data.json$",
+			"dest": "/isr-with-reroute/__data.json?__pathname=/isr-with-reroute"
+		},
+		{
+			"src": "^/isr-without-reroute/?$",
+			"dest": "/isr-without-reroute?__pathname=/isr-without-reroute"
+		},
+		{
+			"src": "^/isr-without-reroute/?/__data.json$",
+			"dest": "/isr-without-reroute/__data.json?__pathname=/isr-without-reroute"
+		},
+		{
+			"src": "^/reroute-without-isr/?(?:/__data.json)?$",
+			"dest": "/fn-0"
+		},
+		{
+			"src": "^/reroute-without-ssr/?(?:/__data.json)?$",
+			"dest": "/fn-0"
+		},
+		{
+			"src": "/.*",
+			"dest": "/fn"
+		}
+	],
+	"overrides": {}
+}
