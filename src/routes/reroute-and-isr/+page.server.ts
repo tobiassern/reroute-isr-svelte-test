@@ -11,10 +11,6 @@ export const config = {
 		//
 		// Making a `GET` or `HEAD` request with `x-prerender-revalidate: <token>` will force the asset to be re-validated.
 		bypassToken: BYPASS_TOKEN,
-
-		// List of valid query parameters. Other parameters (such as utm tracking codes) will be ignored,
-		// ensuring that they do not result in content being regenerated unnecessarily
-		// allowQuery: ['search'],
 	},
 };
 
